@@ -13,7 +13,13 @@ def check_profanity(text_to_check):
     # Python 3: import urllib.request
     connection = urllib.request.urlopen("http://www.wdylike.appspot.com/?q=" + urllib.parse.quote(text_to_check))
     output = connection.read()
-    print(output)
+    output_string = output.decode("utf-8")
+    if "true" in output_string:
+        print("Profanity Alert!")
+    elif "false" in output_string:
+        print("Safe text, you can send it")
+    else:
+        print("Could not scan the document properly")
     connection.close()
 
 read_text()    
