@@ -1,0 +1,18 @@
+import media
+import fresh_tomatoes
+
+justice_league = media.Movie("Justice League", "Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions.", "https://2dor3d.com/images/movies/justiceleague.jpg", "https://www.youtube.com/watch?v=r9-DM9uBtVI")
+
+star_wars_viii = media.Movie("The Last Jedi", "Rey develops here newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of ther powers. Meanwhile the Resistance prepares to do battle with the First Order.", "https://s-media-cache-ak0.pinimg.com/originals/df/2e/ce/df2ece97e8591d5b304abb1d2c39e2ab.jpg", "https://www.youtube.com/watch?v=Q0CbN8sfihY")
+
+thor_ragnarok = media.Movie("Thor Ragnarok", "Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his home world and the Asgardian civilization.", "http://04.imgmini.eastday.com/mobile/20171110/20171110235923_d5fa37ee55b8bc88f820eac5cd529d38_1.jpeg", "https://www.youtube.com/watch?v=ue80QwXMRHg")
+
+kingsman_golden_circle = media.Movie("Kingsman: The Golden Circle", "With their headquarters destroyed and the world held hostage, members of Kingsman find new allies when they discover a spy organization in the United States known as Statesman. In an adventure that tests their strength and wits, the elite secret agents from both sides of the pond band together to battle a ruthless enemy and save the day, something that's becoming a bit of a habit for Eggsy.", "http://utero.pe/wp-content/uploads/2017/10/026028.jpg", "https://www.youtube.com/watch?v=6Nxc-3WpMbg")
+
+despicable_me_3 = media.Movie("Despicable Me 3", "The mischievous Minions hope that Gru will return to a life of crime after the new boss of the Anti-Villain League fires him. Instead, Gru decides to remain retired and travel to Freedonia to meet his long-lost twin brother for the first time. The reunited siblings soon find themselves in an uneasy alliance to take down the elusive Balthazar Bratt, a former 1980s child star who seeks revenge against the world.", "https://2.bp.blogspot.com/-JmvJfmd5gGE/WUal2aaFA5I/AAAAAAAAgVU/ZqQzm38vC2gnOTAcYpC3NKs3Ceqia9FXgCLcBGAs/s1600/DM3_Adv1Sheet_RGB_5.jpg", "https://www.youtube.com/watch?v=euz-KBBfAAo")
+
+king_arthur = media.Movie("King Arthur: Legend of the Sword", "After the murder of his father, young Arthur's power-hungry uncle Vortigern seizes control of the crown. Robbed of his birthright, he grows up the hard way in the back alleys of the city, not knowing who he truly is. When fate leads him to pull the Excalibur sword from stone, Arthur embraces his true destiny to become a legendary fighter and leader.", "https://1.bp.blogspot.com/-UWAaLwrbHt0/WXh4GXx1SrI/AAAAAAAABXc/NlxxCRwmMg066cHyddv5dZt-waA0xQyAQCK4BGAYYCw/s1600/0a5c641e7e2e7050b86ff0dc5d55c7b9acd65ebb.jpg", "https://www.youtube.com/watch?v=SX9y5JPuRHY")
+
+movies = [justice_league, star_wars_viii, thor_ragnarok, kingsman_golden_circle, despicable_me_3, king_arthur]
+
+fresh_tomatoes.open_movies_page(movies)
