@@ -13,8 +13,8 @@ def get_data(filename):
         csvFileReader = csv.reader(csvfile)
         next(csvFileReader)
         for row in csvFileReader:
-            open_prices.append(float(row[1]))
-            prices.append(float(row[5]))
+            open_prices.append(float(row[1])) # features are: open price
+            prices.append(float(row[4])) # values are: close price
     return
 
 def predict_prices(open_prices, prices, x):
